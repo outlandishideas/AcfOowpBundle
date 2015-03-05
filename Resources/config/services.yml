@@ -1,0 +1,7 @@
+services:
+    outlandish_acf.wrapper.acf:
+        class: Outlandish\AcfOowpBundle\Wrapper\Acf
+
+    outlandish_acf.repository.acf:
+        class: Outlandish\AcfOowpBundle\Repository\Acf
+        arguments: [@outlandish_acf.wrapper.acf]
